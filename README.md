@@ -1,6 +1,6 @@
-# Portfolio QA – Reyes Díaz  
+# Portfolio QA – Laura Rodríguez 
 **Portafolio web personal de proyectos de QA**  
-🔗 [Ver Web Portfolio QA](https://bootcamp-qa.github.io/portfolioqa/)
+🔗 [Ver Web Portfolio QA](https://laurarodriguezqa.github.io/bootcamp-qa/)
 
 ---
 
@@ -33,6 +33,6 @@ Para ejecutar los tests:
 ---
 
 ## 👩‍💻 Autor
-**Reyes Díaz – QA Junior**  
+**Laura Rodríguez – QA Junior**  
 [🔗 LinkedIn](https://www.linkedin.com/in/reyescuesta)
 
