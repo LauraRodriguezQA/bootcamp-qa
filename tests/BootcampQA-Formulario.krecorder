@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>BootcampQA-Formulario</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Enviar formulario con datos correctos</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://laurarodriguezqa.github.io/bootcamp-qa/<datalist><option>https://laurarodriguezqa.github.io/bootcamp-qa/</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=entry.1564292246</option><option>xpath=//input[@id='email']</option><option>xpath=//section[@id='contacto']/form/input</option><option>xpath=//input</option><option>css=#email</option></datalist></td><td>test@gmail.com</td></tr>
+<tr><td>select</td><td>id=asunto<datalist><option>id=asunto</option><option>name=entry.877029958</option><option>xpath=//select[@id='asunto']</option><option>xpath=//section[@id='contacto']/form/select</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Herramientas & Tecnología:'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::select[1]</option><option>xpath=//select</option><option>css=#asunto</option></datalist></td><td>label=Información</td></tr>
+<tr><td>type</td><td>id=mensaje<datalist><option>id=mensaje</option><option>name=entry.465720647</option><option>xpath=//textarea[@id='mensaje']</option><option>xpath=//section[@id='contacto']/form/textarea</option><option>xpath=//textarea</option><option>css=#mensaje</option></datalist></td><td>MEnsaje test</td></tr>
+<tr><td>click</td><td>id=enviar<datalist><option>id=enviar</option><option>xpath=//button[@id='enviar']</option><option>xpath=//section[@id='contacto']/form/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Herramientas & Tecnología:'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Stop'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Enviar']/parent::*</option><option>xpath=//button</option><option>css=#enviar</option></datalist></td><td></td></tr>
+<tr><td>assertElementPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Se registró tu respuesta.'])[1]/preceding::div[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Se registró tu respuesta.'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enviar otra respuesta'])[1]/preceding::div[2]</option><option>xpath=//div[2]/div/div/div[2]</option><option>css=div.pdLVYe.LgNcQe</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Enviar el formulario con mensaje vacio</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://laurarodriguezqa.github.io/bootcamp-qa/<datalist><option>https://laurarodriguezqa.github.io/bootcamp-qa/</option></datalist></td><td></td></tr>
+<tr><td>select</td><td>id=asunto<datalist><option>id=asunto</option><option>name=entry.877029958</option><option>xpath=//select[@id='asunto']</option><option>xpath=//section[@id='contacto']/form/select</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Herramientas & Tecnología:'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::select[1]</option><option>xpath=//select</option><option>css=#asunto</option></datalist></td><td>label=Información</td></tr>
+<tr><td>click</td><td>id=enviar<datalist><option>id=enviar</option><option>xpath=//button[@id='enviar']</option><option>xpath=//section[@id='contacto']/form/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Herramientas & Tecnología:'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Stop'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Enviar']/parent::*</option><option>xpath=//button</option><option>css=#enviar</option></datalist></td><td></td></tr>
+<tr><td>assertElementNotPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Se registró tu respuesta.'])[1]/preceding::div[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Se registró tu respuesta.'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enviar otra respuesta'])[1]/preceding::div[2]</option><option>xpath=//div[2]/div/div/div[2]</option><option>css=div.pdLVYe.LgNcQe</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Enviar el formulario con email vacio</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://laurarodriguezqa.github.io/bootcamp-qa/<datalist><option>https://laurarodriguezqa.github.io/bootcamp-qa/</option></datalist></td><td></td></tr>
+<tr><td>select</td><td>id=asunto<datalist><option>id=asunto</option><option>name=entry.877029958</option><option>xpath=//select[@id='asunto']</option><option>xpath=//section[@id='contacto']/form/select</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Herramientas & Tecnología:'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::select[1]</option><option>xpath=//select</option><option>css=#asunto</option></datalist></td><td>label=Información</td></tr>
+<tr><td>type</td><td>id=mensaje<datalist><option>id=mensaje</option><option>name=entry.465720647</option><option>xpath=//textarea[@id='mensaje']</option><option>xpath=//section[@id='contacto']/form/textarea</option><option>xpath=//textarea</option><option>css=#mensaje</option></datalist></td><td>MEnsaje text</td></tr>
+<tr><td>click</td><td>id=enviar<datalist><option>id=enviar</option><option>xpath=//button[@id='enviar']</option><option>xpath=//section[@id='contacto']/form/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Herramientas & Tecnología:'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Stop'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Enviar']/parent::*</option><option>xpath=//button</option><option>css=#enviar</option></datalist></td><td></td></tr>
+<tr><td>assertElementNotPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Se registró tu respuesta.'])[1]/preceding::div[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Se registró tu respuesta.'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enviar otra respuesta'])[1]/preceding::div[2]</option><option>xpath=//div[2]/div/div/div[2]</option><option>css=div.pdLVYe.LgNcQe</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Enviar el formulario con asunto vacio</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://laurarodriguezqa.github.io/bootcamp-qa/<datalist><option>https://laurarodriguezqa.github.io/bootcamp-qa/</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=entry.1564292246</option><option>xpath=//input[@id='email']</option><option>xpath=//section[@id='contacto']/form/input</option><option>xpath=//input</option><option>css=#email</option></datalist></td><td>test@gmail.com</td></tr>
+<tr><td>type</td><td>id=mensaje<datalist><option>id=mensaje</option><option>name=entry.465720647</option><option>xpath=//textarea[@id='mensaje']</option><option>xpath=//section[@id='contacto']/form/textarea</option><option>xpath=//textarea</option><option>css=#mensaje</option></datalist></td><td>MEnsaje text</td></tr>
+<tr><td>click</td><td>id=enviar<datalist><option>id=enviar</option><option>xpath=//button[@id='enviar']</option><option>xpath=//section[@id='contacto']/form/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Herramientas & Tecnología:'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Katalon Recorder is recording ...'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Stop'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Enviar']/parent::*</option><option>xpath=//button</option><option>css=#enviar</option></datalist></td><td></td></tr>
+<tr><td>assertElementNotPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Se registró tu respuesta.'])[1]/preceding::div[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Se registró tu respuesta.'])[1]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enviar otra respuesta'])[1]/preceding::div[2]</option><option>xpath=//div[2]/div/div/div[2]</option><option>css=div.pdLVYe.LgNcQe</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>

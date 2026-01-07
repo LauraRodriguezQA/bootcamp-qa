@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>BootcampQA-Informacion</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Ver informacion sobre mi</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://laurarodriguezqa.github.io/bootcamp-qa/#sobremi<datalist><option>https://laurarodriguezqa.github.io/bootcamp-qa/#sobremi</option></datalist></td><td></td></tr>
+<tr><td>assertElementPresent</td><td>id=menusobremi<datalist><option>id=menusobremi</option><option>link=Sobre mí</option><option>xpath=//a[contains(text(),'Sobre mí')]</option><option>xpath=//a[@id='menusobremi']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Proyectos'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Educación'])[1]/preceding::a[2]</option><option>xpath=//*/text()[normalize-space(.)='Sobre mí']/parent::*</option><option>xpath=//a[contains(@href, '#sobremi')]</option><option>xpath=//a</option><option>css=#menusobremi</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Ver informacion de proyecto y visitar enlace</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://laurarodriguezqa.github.io/bootcamp-qa/<datalist><option>https://laurarodriguezqa.github.io/bootcamp-qa/</option></datalist></td><td></td></tr>
+<tr><td>echo</td><td>La seccion proyectos esta visible<datalist><option>La seccion proyectos esta visible</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>https://laurarodriguezqa.github.io/bootcamp-qa/#proyectos<datalist><option>https://laurarodriguezqa.github.io/bootcamp-qa/#proyectos</option></datalist></td><td></td></tr>
+<tr><td>assertElementPresent</td><td>id=menuproyectos<datalist><option>id=menuproyectos</option><option>link=Proyectos</option><option>xpath=//a[contains(text(),'Proyectos')]</option><option>xpath=//a[@id='menuproyectos']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sobre mí'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Educación'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contacto'])[1]/preceding::a[2]</option><option>xpath=//*/text()[normalize-space(.)='Proyectos']/parent::*</option><option>xpath=//a[contains(@href, '#proyectos')]</option><option>xpath=//li[2]/a</option><option>css=#menuproyectos</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=linkproyectoportafolio<datalist><option>id=linkproyectoportafolio</option><option>link=Portfolio QA Web</option><option>xpath=//a[contains(text(),'Portfolio QA Web')]</option><option>xpath=//a[@id='linkproyectoportafolio']</option><option>xpath=//section[@id='proyectos']/h3/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='HTML5'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='CSS3'])[1]/preceding::a[1]</option><option>xpath=//*/text()[normalize-space(.)='Portfolio QA Web']/parent::*</option><option>xpath=//a[contains(@href, 'file:///C:/Users/Laura/Documents/GitHub/portfolioqa/index.html')]</option><option>xpath=//h3/a</option><option>css=#linkproyectoportafolio</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=linkproyectoapi<datalist><option>id=linkproyectoapi</option><option>link=API de Usuarios</option><option>xpath=//a[contains(text(),'API de Usuarios')]</option><option>xpath=//a[@id='linkproyectoapi']</option><option>xpath=//section[@id='proyectos']/h3[2]/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='GitHub Actions'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='SQLbase'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Postman'])[1]/preceding::a[1]</option><option>xpath=//*/text()[normalize-space(.)='API de Usuarios']/parent::*</option><option>xpath=//a[contains(@href, 'https://laurarodriguezqa.atlassian.net/wiki/x/F4AB')]</option><option>xpath=//h3[2]/a</option><option>css=#linkproyectoapi</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>https://laurarodriguezqa.atlassian.net/wiki/spaces/H/pages/98327/Plan+de+Pruebas+Proyecto+Hipercor/<datalist><option>https://laurarodriguezqa.atlassian.net/wiki/spaces/H/pages/98327/Plan+de+Pruebas+Proyecto+Hipercor</option><option>https://laurarodriguezqa.atlassian.net/wiki/spaces/H/pages/98327/Plan+de+Pruebas+Proyecto+Hipercor/</option></datalist></td><td></td></tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Ver informacion de educacion</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://laurarodriguezqa.github.io/bootcamp-qa/#educacion<datalist><option>https://laurarodriguezqa.github.io/bootcamp-qa/#educacion</option></datalist></td><td></td></tr>
+<tr><td>assertElementPresent</td><td>id=menueducacion<datalist><option>id=menueducacion</option><option>link=Educación</option><option>xpath=//a[contains(text(),'Educación')]</option><option>xpath=//a[@id='menueducacion']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Proyectos'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sobre mí'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contacto'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Maria Laura Rodriguez'])[1]/preceding::a[2]</option><option>xpath=//*/text()[normalize-space(.)='Educación']/parent::*</option><option>xpath=//a[contains(@href, '#educacion')]</option><option>xpath=//li[3]/a</option><option>css=#menueducacion</option></datalist></td><td></td></tr>
+<tr><td>assertText</td><td>xpath=//section[@id='educacion']/h3<datalist><option>xpath=//section[@id='educacion']/h3</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Newman'])[1]/following::h3[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Septiembre 2025 – Diciembre 2025'])[1]/preceding::h3[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='QA & Testing:'])[1]/preceding::h3[1]</option><option>xpath=//*/text()[normalize-space(.)='Bootcamp QA Manual, API y Automatizado – Bootcamp QA']/parent::*</option><option>xpath=//section[3]/h3</option><option>css=#educacion > h3</option></datalist></td><td>Bootcamp QA Manual, API y Automatizado – Bootcamp QA</td></tr>
+<tr><td>click</td><td>xpath=//section[@id='educacion']/p[4]/strong<datalist><option>xpath=//section[@id='educacion']/p[4]/strong</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Automatización:'])[1]/following::strong[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='QA & Testing:'])[1]/following::strong[2]</option><option>xpath=//*/text()[normalize-space(.)='Herramientas & Tecnología:']/parent::*</option><option>xpath=//p[4]/strong</option></datalist></td><td>Herramientas & Tecnología: SQL básico, HTML5, CSS3, JavaScript, Python, Git, GitHub, GitHub Pages, Visual Studio Code, JIRA, Confluence.</td></tr>
+</tbody></table>
+</body>
+</html>
